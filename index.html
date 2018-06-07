@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>PHP Form validation</title>
+	
+	<style type="text/css">
+	body{
+		width:700px;
+		margin:30px auto;
+		}
+		
+		input{
+			padding:10px;
+			width:400px;
+			margin:6px;
+		}
+		button{
+		cursor:pointer}
+	</style>
+</head>
+<body>
+	<form  method="post" action="action.php">
+		  <fieldset>
+    <legend>PHP Form validation:</legend>
+		<table>
+			<tr>
+				<td>
+				First Name
+				</td>
+				<td >
+					<input  type="text" name="first_name" required>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Last Name
+				</td>
+				<td >
+					<input  type="text" name="last_name"  required>
+				</td>
+			</tr>
+			<tr>
+				<td >
+				Email
+				</td>
+				<td>
+					<input type="email" name="email" placeholder="Enter Your Mail" id='email'>
+				</td>
+			</tr>
+			<tr>
+				<td >
+					Message
+				</td>
+				<td>
+					<textarea  name="message" cols="65" rows="6" placeholder="Write your Message" required></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				</td>
+				<td>
+				<button type="submit">Submit</button>
+				</td>
+			</tr>
+		</table>
+		
+		</fieldset>
+	</form>
+	
+
+</body>
+</html>
